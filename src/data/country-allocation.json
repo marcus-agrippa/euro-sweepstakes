@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Ben",
+    "teams": [
+      "Belgium",
+      "Denmark",
+      "France",
+      "Romania",
+      "Hungary",
+      "Ukraine",
+      "Croatia",
+      "Georgia"
+    ],
+    "beersOwed": [],
+    "beersOwedBy": [],
+    "lastMatchResult": ""
+  },
+  {
+    "name": "Greeny",
+    "teams": [
+      "Italy",
+      "Czech Republic",
+      "Serbia",
+      "Netherlands",
+      "England",
+      "Austria",
+      "Slovakia",
+      "Spain"
+    ],
+    "beersOwed": [],
+    "beersOwedBy": [],
+    "lastMatchResult": ""
+  },
+  {
+    "name": "Reese",
+    "teams": [
+      "Switzerland",
+      "Slovenia",
+      "Germany",
+      "Portugal",
+      "Albania",
+      "Poland",
+      "Scotland",
+      "Turkey"
+    ],
+    "beersOwed": [],
+    "beersOwedBy": [],
+    "lastMatchResult": ""
+  }
+]

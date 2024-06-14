@@ -1,0 +1,44 @@
+.friend {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #685d76;
+}
+
+.friend h2 {
+  color: #fff; /* Dark grey text */
+}
+
+.friend p {
+  padding-top: 20px;
+}
+
+.friend ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.friend ul li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.friend .beers-owed {
+  font-size: 18px;
+  color: #ff5722; /* Orange text */
+}
+
+.friend .beers-owed-by {
+  color: #2196f3; /* Blue text */
+}
+
+.teams {
+  font-size: 18px;
+  color: greenyellow;
+}
+
+.total-beers {
+  color: navajowhite;
+}
