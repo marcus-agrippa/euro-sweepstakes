@@ -1,12 +1,1 @@
-[
-  { "homeTeam": "France", "awayTeam": "Portugal", "result": "home" },
-  { "homeTeam": "Germany", "awayTeam": "Italy", "result": "hpme" },
-  { "homeTeam": "Spain", "awayTeam": "England", "result": "home" },
-  { "homeTeam": "Netherlands", "awayTeam": "Belgium", "result": "home" },
-  { "homeTeam": "Portugal", "awayTeam": "Italy", "result": "home" },
-  { "homeTeam": "France", "awayTeam": "Germany", "result": "home" },
-  { "homeTeam": "England", "awayTeam": "Netherlands", "result": "home" },
-  { "homeTeam": "Spain", "awayTeam": "Poland", "result": "home" },
-  { "homeTeam": "Georgia", "awayTeam": "Spain", "result": "home" },
-  { "homeTeam": "Turkey", "awayTeam": "Hungary", "result": "home" }
-]
+[{ "homeTeam": "Germany", "awayTeam": "Scotland", "result": "home" }]
