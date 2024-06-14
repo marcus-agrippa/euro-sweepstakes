@@ -7,7 +7,7 @@
 }
 
 .friend h2 {
-  color: #fff; /* Dark grey text */
+  color: #fff;
 }
 
 .friend p {
@@ -27,11 +27,11 @@
 
 .friend .beers-owed {
   font-size: 18px;
-  color: #ff5722; /* Orange text */
+  color: #ff5722;
 }
 
 .friend .beers-owed-by {
-  color: #2196f3; /* Blue text */
+  color: #2196f3;
 }
 
 .teams {
@@ -41,4 +41,9 @@
 
 .total-beers {
   color: navajowhite;
+}
+
+.beers-owed-to-friends {
+  font-size: 18px;
+  color: skyblue;
 }

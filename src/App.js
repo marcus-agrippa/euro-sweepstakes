@@ -1,13 +1,12 @@
-// App.js
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Friend from './Friends';
-import countryAllocation from './data/country-allocation.json'; // Update file name
-import euroFixtures from './data/euro-fixtures.json'; // Update file name
+import countryAllocation from './data/country-allocation.json';
+import euroFixtures from './data/euro-fixtures.json';
 
 const App = () => {
-  const [friends, setFriends] = useState(countryAllocation); // Set initial state using imported JSON data
-  const [fixtures, setFixtures] = useState(euroFixtures); // Set initial state using imported JSON data
+  const [friends, setFriends] = useState(countryAllocation);
+  const [fixtures, setFixtures] = useState(euroFixtures);
 
   useEffect(() => {
     if (fixtures.length > 0 && friends.length > 0) {
@@ -55,7 +54,7 @@ const App = () => {
               (friend.teams.includes(fixture.homeTeam) ||
                 friend.teams.includes(fixture.awayTeam))
             ) {
-              // Handle draw case here if needed
+              // Draw case logic ommitted
             }
           }
 
