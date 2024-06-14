@@ -3,7 +3,7 @@ import React from 'react';
 import './FriendsCss.css';
 
 const Friends = ({ friend }) => {
-  const { name, teams, beersOwed, beersOwedBy, lastMatchResult } = friend;
+  const { name, teams, beersOwed } = friend;
 
   // Calculate total beers owed
   const totalBeersOwed = beersOwed.length;
