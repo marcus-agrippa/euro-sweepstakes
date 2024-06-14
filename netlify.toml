@@ -1,4 +1,4 @@
 [build]
-  command = "npm run build"
+  command = "CI=false react-scripts build"
+  functions = "netlify/functions"
   publish = "build"
-  ignore_build_errors = true
