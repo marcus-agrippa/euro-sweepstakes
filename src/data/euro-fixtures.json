@@ -1,1 +1,6 @@
-[{ "homeTeam": "Germany", "awayTeam": "Scotland", "result": "home" }]
+[
+  { "homeTeam": "Germany", "awayTeam": "Scotland", "result": "home" },
+  { "homeTeam": "Switzerland", "awayTeam": "Hungary", "result": "home" },
+  { "homeTeam": "Spain", "awayTeam": "Coatia", "result": "home" },
+  { "homeTeam": "Italy", "awayTeam": "Albania", "result": "home" }
+]
