@@ -2,5 +2,8 @@
   { "homeTeam": "Germany", "awayTeam": "Scotland", "result": "home" },
   { "homeTeam": "Switzerland", "awayTeam": "Hungary", "result": "home" },
   { "homeTeam": "Spain", "awayTeam": "Croatia", "result": "home" },
-  { "homeTeam": "Italy", "awayTeam": "Albania", "result": "home" }
+  { "homeTeam": "Italy", "awayTeam": "Albania", "result": "home" },
+  { "homeTeam": "Netherlands", "awayTeam": "Poland", "result": "home" },
+  { "homeTeam": "Slovenia", "awayTeam": "Denmark", "result": "draw" },
+  { "homeTeam": "England", "awayTeam": "Serbia", "result": "home" }
 ]
