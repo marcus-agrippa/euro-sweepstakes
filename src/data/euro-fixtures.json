@@ -8,5 +8,7 @@
   { "homeTeam": "England", "awayTeam": "Serbia", "result": "home" },
   { "homeTeam": "Romania", "awayTeam": "Ukraine", "result": "home" },
   { "homeTeam": "Slovakia", "awayTeam": "Belgium", "result": "home" },
-  { "homeTeam": "France", "awayTeam": "Austria", "result": "home" }
+  { "homeTeam": "France", "awayTeam": "Austria", "result": "home" },
+  { "homeTeam": "Turkey", "awayTeam": "Georgia", "result": "home" },
+  { "homeTeam": "Portugal", "awayTeam": "Czech Republic", "result": "home" }
 ]
