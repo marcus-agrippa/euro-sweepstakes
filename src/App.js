@@ -75,6 +75,14 @@ const App = () => {
       <div className='flex'>
         <img src='/euro-logo.png' width={'125px'} alt='' />
         <h2 className='app-heading'>Sweepstakes</h2>
+        <button className='button' popovertarget='my-popover'>
+          🥇 Prize
+        </button>
+        <div id='my-popover' popover='auto'>
+          <p>
+            2 x 🍺<br></br>1 x 🟥🐂 <br></br>from 🥈 & 🥉
+          </p>
+        </div>
       </div>
       {friends.map((friend, index) => (
         <Friend key={index} friend={friend} />

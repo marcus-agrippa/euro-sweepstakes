@@ -15,6 +15,52 @@ body {
   font-weight: 700;
 }
 
+.button {
+  font-size: 18px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px;
+  background-color: #685d76;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+[popover] {
+  font-size: 20px;
+  background: #685d76;
+  color: white;
+  font-weight: 400;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  max-width: 20ch;
+  line-height: 1.4;
+  top: 2rem;
+  margin: 0 auto;
+}
+
+/*   IS-OPEN STATE   */
+[popover]:popover-open {
+  translate: 0 0;
+}
+
+/*   EXIT STATE   */
+[popover] {
+  transition: translate 0.7s ease-out, display 0.7s ease-out allow-discrete;
+  translate: 0 -22rem;
+}
+
+[popover]:popover-open::backdrop {
+  background-color: rgba(0, 0, 0, 0.2); /* semi-transparent black */
+  backdrop-filter: blur(2px); /* blur effect */
+}
+
+/*   0. BEFORE-OPEN STATE   */
+@starting-style {
+  [popover]:popover-open {
+    translate: 0 -22rem;
+  }
+}
+
 .flex {
   display: flex;
   flex-direction: column;
