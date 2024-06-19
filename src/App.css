@@ -13,10 +13,19 @@ body {
   color: #fff;
   font-size: 24px;
   font-weight: 700;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px 0;
+  gap: 10px;
 }
 
 .last-updated {
+  font-size: 14px;
   color: #fff;
 }
 

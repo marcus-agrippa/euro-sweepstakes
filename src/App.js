@@ -72,11 +72,14 @@ const App = () => {
 
   return (
     <div className='app'>
-      <p className='last-updated'>Last Updated: 19/6/24</p>
-      <h2 className='app-heading'>🏆⚽ Euro Sweepstakes</h2>
+      <div className='flex'>
+        <img src='/euro-logo.png' width={'125px'} alt='' />
+        <h2 className='app-heading'>Sweepstakes</h2>
+      </div>
       {friends.map((friend, index) => (
         <Friend key={index} friend={friend} />
       ))}
+      <p className='last-updated'>Last Updated: 19/6/24</p>
     </div>
   );
 };
