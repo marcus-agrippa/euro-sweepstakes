@@ -35,7 +35,7 @@ const App = () => {
                 from:
                   friends.find(f => f.teams.includes(fixture.awayTeam))?.name ||
                   fixture.awayTeam,
-                description: `- ${loserFriend} owes a 🍺 to ${winnerFriend} because ${winnerTeam} beat ${loserTeam}`,
+                description: `${loserFriend} owes a 🍺 to ${winnerFriend} because ${winnerTeam} beat ${loserTeam}`,
               };
               totalBeersOwed++;
             } else if (
@@ -46,7 +46,7 @@ const App = () => {
                 from:
                   friends.find(f => f.teams.includes(fixture.homeTeam))?.name ||
                   fixture.homeTeam,
-                description: `- ${loserFriend} owes a 🍺 to ${winnerFriend} because ${winnerTeam} beat ${loserTeam}`,
+                description: `${loserFriend} owes a 🍺 to ${winnerFriend} because ${winnerTeam} beat ${loserTeam}`,
               };
               totalBeersOwed++;
             } else if (
