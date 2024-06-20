@@ -10,5 +10,7 @@
   { "homeTeam": "Slovakia", "awayTeam": "Belgium", "result": "home" },
   { "homeTeam": "France", "awayTeam": "Austria", "result": "home" },
   { "homeTeam": "Turkey", "awayTeam": "Georgia", "result": "home" },
-  { "homeTeam": "Portugal", "awayTeam": "Czech Republic", "result": "home" }
+  { "homeTeam": "Portugal", "awayTeam": "Czech Republic", "result": "home" },
+  { "homeTeam": "Croatia", "awayTeam": "Albania", "result": "draw" },
+  { "homeTeam": "Germany", "awayTeam": "Hungary", "result": "home" }
 ]
