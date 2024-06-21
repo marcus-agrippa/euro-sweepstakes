@@ -87,7 +87,7 @@ const App = () => {
       {friends.map((friend, index) => (
         <Friend key={index} friend={friend} />
       ))}
-      <p className='last-updated'>Last Updated: 19/6/24</p>
+      <p className='last-updated'>Last Updated: 22/6/24</p>
     </div>
   );
 };
