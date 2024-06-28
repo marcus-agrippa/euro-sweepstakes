@@ -88,7 +88,7 @@ const App = () => {
         <Friend key={index} friend={friend} />
       ))}
       <div className='friend fixtures'>
-        <h3>Round of 16</h3>
+        <h3 className='fixtures'>Round of 16</h3>
         <p>🔥 (R) Switzerland 🇨🇭 v 🇮🇹 Italy (G)</p>
         <p>🔥 (R) Germany 🇩🇪 v 🇩🇰 Denmark (B)</p>
         <p>(G) England 🏴󠁧󠁢󠁥󠁮󠁧󠁿 v 🇸🇰 Slovakia (G)</p>
@@ -98,7 +98,7 @@ const App = () => {
         <p>🔥 (B) Romania 🇷🇴 v 🇳🇱 Netherlands (G)</p>
         <p>🔥 (G) Austra 🇦🇹 v 🇹🇷 Turkey (R)</p>
         <br></br>
-        <p className='fixtures-sup'>🔥 - Head to Head</p>
+        <p className='fixtures-sup'>🔥 = H2H</p>
       </div>
       <p className='last-updated'>Last Updated: 28/6/24</p>
     </div>
