@@ -4,6 +4,17 @@ import './FriendsCss.css';
 const Friends = ({ friend }) => {
   const { name, teams, beersOwed } = friend;
 
+  const eliminatedTeams = [
+    'Ukraine',
+    'Albania',
+    'Croatia',
+    'Czech Republic',
+    'Poland',
+    'Hungary',
+    'Serbia',
+    'Scotland',
+  ];
+
   const totalBeersOwed = beersOwed.length;
 
   return (
@@ -34,7 +45,11 @@ const Friends = ({ friend }) => {
         <p className='teams'>Teams:</p>
         <ul className='teams-list'>
           {teams.map((team, index) => (
-            <li key={index} className='team-list-item'>
+            <li
+              key={index}
+              className={`team-list-item ${
+                eliminatedTeams.includes(team) ? 'team-eliminated' : ''
+              }`}>
               {team}
             </li>
           ))}

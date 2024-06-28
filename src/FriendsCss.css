@@ -79,3 +79,8 @@
   font-size: 18px;
   color: skyblue;
 }
+
+.team-eliminated {
+  /* background-color: #f38787; */
+  opacity: 0.4;
+}
