@@ -7,6 +7,12 @@ import euroFixtures from './data/euro-fixtures.json';
 const App = () => {
   const [friends, setFriends] = useState(countryAllocation);
   const [fixtures, setFixtures] = useState(euroFixtures);
+  const [randomNumber, setRandomNumber] = useState(null);
+
+  const generateRandomNumber = () => {
+    const number = Math.floor(Math.random() * 10) + 1;
+    setRandomNumber(number);
+  };
 
   useEffect(() => {
     if (fixtures.length > 0 && friends.length > 0) {
@@ -101,6 +107,14 @@ const App = () => {
         <p>🔥 (G) Austra 🇦🇹 v 🇹🇷 Turkey (R)</p>
         <br></br>
         <p className='fixtures-sup'>🔥 = H2H</p>
+      </div>
+      <div className='flex-row'>
+        <button className='button' onClick={generateRandomNumber}>
+          Generate Random Number
+        </button>
+        {randomNumber !== null && (
+          <p className='random-number'>{randomNumber}</p>
+        )}
       </div>
       <p className='last-updated'>Last Updated: 28/6/24</p>
     </div>
