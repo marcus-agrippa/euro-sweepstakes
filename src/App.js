@@ -75,6 +75,8 @@ const App = () => {
       <div className='flex'>
         <img src='/euro-logo.png' width={'125px'} alt='' />
         <h2 className='app-heading'>Sweepstakes</h2>
+        <p className='event-details'>Redemption Day: 20/7/24</p>
+        <p className='event-details'>Venue: SLS</p>
         <button className='button' popovertarget='my-popover'>
           🥇 Prize
         </button>
