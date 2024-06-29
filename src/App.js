@@ -116,7 +116,7 @@ const App = () => {
           <p className='random-number'>{randomNumber}</p>
         )}
       </div>
-      <p className='last-updated'>Last Updated: 28/6/24</p>
+      <p className='last-updated'>Last Updated: 29/6/24</p>
     </div>
   );
 };
