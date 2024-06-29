@@ -129,7 +129,7 @@ const App = () => {
         </button>
         {randomName && <p className='random-number'>{randomName}</p>}
       </div>
-      <p className='last-updated'>Last Updated: 29/6/24</p>
+      <p className='last-updated'>Last Updated: 30/6/24</p>
     </div>
   );
 };
