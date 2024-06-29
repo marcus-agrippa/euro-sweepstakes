@@ -20,5 +20,7 @@
   { "homeTeam": "Spain", "awayTeam": "Albania", "result": "home" },
   { "homeTeam": "Austria", "awayTeam": "Netherlands", "result": "home" },
   { "homeTeam": "Georgia", "awayTeam": "Portugal", "result": "home" },
-  { "homeTeam": "Turkey", "awayTeam": "Czech Republic", "result": "home" }
+  { "homeTeam": "Turkey", "awayTeam": "Czech Republic", "result": "home" },
+  { "homeTeam": "Germany", "awayTeam": "Denmark", "result": "home" },
+  { "homeTeam": "Switzerland", "awayTeam": "Italy", "result": "home" }
 ]
