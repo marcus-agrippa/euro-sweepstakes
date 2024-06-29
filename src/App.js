@@ -8,10 +8,17 @@ const App = () => {
   const [friends, setFriends] = useState(countryAllocation);
   const [fixtures, setFixtures] = useState(euroFixtures);
   const [randomNumber, setRandomNumber] = useState(null);
+  const [randomName, setRandomName] = useState('');
 
   const generateRandomNumber = () => {
     const number = Math.floor(Math.random() * 10) + 1;
     setRandomNumber(number);
+  };
+
+  const generateRandomName = () => {
+    const names = ['Ben', 'Greeny', 'Reese', 'Everybody'];
+    const name = names[Math.floor(Math.random() * names.length)];
+    setRandomName(name);
   };
 
   useEffect(() => {
@@ -115,6 +122,12 @@ const App = () => {
         {randomNumber !== null && (
           <p className='random-number'>{randomNumber}</p>
         )}
+      </div>
+      <div className='flex-row'>
+        <button className='button' onClick={generateRandomName}>
+          Drink
+        </button>
+        {randomName && <p className='random-number'>{randomName}</p>}
       </div>
       <p className='last-updated'>Last Updated: 29/6/24</p>
     </div>
