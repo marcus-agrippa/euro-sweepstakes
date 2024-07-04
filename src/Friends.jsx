@@ -19,6 +19,8 @@ const Friends = ({ friend }) => {
     'Georgia',
     'Slovenia',
     'Belgium',
+    'Romania',
+    'Austria',
   ];
 
   const totalBeersOwed = beersOwed.length;
