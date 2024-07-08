@@ -133,7 +133,7 @@ const App = () => {
         <h3 className='fixtures'>Semi Finals</h3>
         <h6>Espress Martini Round ☕🍸</h6>
         <p>🔥 (B) France 🇫🇷 v 🇪🇸 Spain (G)</p>
-        <p> (G) Netherlands 🇳🇱 v 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England (R)</p>
+        <p> (G) Netherlands 🇳🇱 v 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England (G)</p>
 
         <p className='fixtures-sup'>🔥 = H2H</p>
       </div>
