@@ -6,6 +6,10 @@
   background-color: #685d76;
 }
 
+.eliminated {
+  opacity: 0.5;
+}
+
 .friend h2 {
   color: #fff;
 }

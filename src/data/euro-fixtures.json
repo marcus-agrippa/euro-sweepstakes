@@ -27,5 +27,29 @@
   { "homeTeam": "Spain", "awayTeam": "Georgia", "result": "home" },
   { "homeTeam": "Portugal", "awayTeam": "Slovenia", "result": "home" },
   { "homeTeam": "Netherlands", "awayTeam": "Romania", "result": "home" },
-  { "homeTeam": "Turkey", "awayTeam": "Austria", "result": "home" }
+  { "homeTeam": "Turkey", "awayTeam": "Austria", "result": "home" },
+  {
+    "stage": "quarter",
+    "homeTeam": "Spain",
+    "awayTeam": "Germany",
+    "result": "home"
+  },
+  {
+    "stage": "quarter",
+    "homeTeam": "France",
+    "awayTeam": "Portugal",
+    "result": "home"
+  },
+  {
+    "stage": "quarter",
+    "homeTeam": "England",
+    "awayTeam": "Switzerland",
+    "result": "home"
+  },
+  {
+    "stage": "quarter",
+    "homeTeam": "Netherlands",
+    "awayTeam": "Turkey",
+    "result": "home"
+  }
 ]

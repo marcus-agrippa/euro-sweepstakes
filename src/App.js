@@ -42,13 +42,40 @@ const App = () => {
           if (winnerFriend && loserFriend && winnerFriend !== loserFriend) {
             if (
               friend.teams.includes(fixture.homeTeam) &&
-              fixture.result === 'home'
+              fixture.result === 'home' &&
+              fixture.stage !== 'quarter' &&
+              fixture.stage !== 'semi'
             ) {
               beersOwedInfo = {
                 from:
                   friends.find(f => f.teams.includes(fixture.awayTeam))?.name ||
                   fixture.awayTeam,
                 description: `${loserFriend} owes a 🍺 to ${winnerFriend} because ${winnerTeam} beat ${loserTeam}`,
+              };
+              totalBeersOwed++;
+            } else if (
+              friend.teams.includes(fixture.homeTeam) &&
+              fixture.result === 'home' &&
+              fixture.stage !== 'semi' &&
+              fixture.stage === 'quarter'
+            ) {
+              beersOwedInfo = {
+                from:
+                  friends.find(f => f.teams.includes(fixture.awayTeam))?.name ||
+                  fixture.awayTeam,
+                description: `${loserFriend} owes a Vodka Red Bull 🟥🐂 to ${winnerFriend} because ${winnerTeam} beat ${loserTeam}`,
+              };
+              totalBeersOwed++;
+            } else if (
+              friend.teams.includes(fixture.homeTeam) &&
+              fixture.result === 'home' &&
+              fixture.stage === 'semi'
+            ) {
+              beersOwedInfo = {
+                from:
+                  friends.find(f => f.teams.includes(fixture.awayTeam))?.name ||
+                  fixture.awayTeam,
+                description: `${loserFriend} owes a Espress Martini ☕🍸 to ${winnerFriend} because ${winnerTeam} beat ${loserTeam}`,
               };
               totalBeersOwed++;
             } else if (
@@ -103,11 +130,10 @@ const App = () => {
         <Friend key={index} friend={friend} />
       ))}
       <div className='friend fixtures'>
-        <h3 className='fixtures'>Quarter Finals</h3>
-        <p>🔥 (R) Germany 🇩🇪 v 🇪🇸 Spain (G)</p>
-        <p>🔥 (R) Portugal 🇵🇹 v 🇫🇷 France (B)</p>
-        <p>🔥 (R) Switzerland 🇨🇭 v 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England (G)</p>
-        <p>🔥 (G) Netherlands 🇳🇱 v 🇹🇷 Turkey (R)</p>
+        <h3 className='fixtures'>Semi Finals</h3>
+        <h6>Espress Martini Round ☕🍸</h6>
+        <p>🔥 (B) France 🇫🇷 v 🇪🇸 Spain (G)</p>
+        <p> (G) Netherlands 🇳🇱 v 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England (R)</p>
 
         <p className='fixtures-sup'>🔥 = H2H</p>
       </div>
@@ -125,7 +151,7 @@ const App = () => {
         </button>
         {randomName && <p className='random-number'>{randomName}</p>}
       </div>
-      <p className='last-updated'>Last Updated: 4/7/24</p>
+      <p className='last-updated'>Last Updated: 8/7/24</p>
     </div>
   );
 };
