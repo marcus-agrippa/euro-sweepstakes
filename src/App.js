@@ -130,10 +130,9 @@ const App = () => {
         <Friend key={index} friend={friend} />
       ))}
       <div className='friend fixtures'>
-        <h3 className='fixtures'>Semi Finals</h3>
-        <h6>Espress Martini Round ☕🍸</h6>
-        <p>🔥 (B) France 🇫🇷 v 🇪🇸 Spain (G)</p>
-        <p>🔥 (G) Netherlands 🇳🇱 v 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England 🃏 (R)</p>
+        <h3 className='fixtures'>Final 🎉🎉🎉</h3>
+        <h6>Long Island Iced Tea Round 🍹</h6>
+        <p>🔥 (G) Spain 🇳🇱 v 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England 🃏 (R)</p>
 
         <p className='fixtures-sup'>🔥 = H2H</p>
       </div>
@@ -151,7 +150,7 @@ const App = () => {
         </button>
         {randomName && <p className='random-number'>{randomName}</p>}
       </div>
-      <p className='last-updated'>Last Updated: 10/7/24</p>
+      <p className='last-updated'>Last Updated: 11/7/24</p>
     </div>
   );
 };
