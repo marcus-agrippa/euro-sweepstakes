@@ -51,5 +51,11 @@
     "homeTeam": "Netherlands",
     "awayTeam": "Turkey",
     "result": "home"
+  },
+  {
+    "stage": "semi",
+    "homeTeam": "Spain",
+    "awayTeam": "France",
+    "result": "home"
   }
 ]
