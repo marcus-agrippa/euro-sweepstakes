@@ -63,5 +63,11 @@
     "homeTeam": "England (wildcard)",
     "awayTeam": "Netherlands",
     "result": "home"
+  },
+  {
+    "stage": "final",
+    "homeTeam": "Spain",
+    "awayTeam": "England (wildcard)",
+    "result": "home"
   }
 ]

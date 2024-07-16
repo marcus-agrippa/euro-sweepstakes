@@ -28,16 +28,17 @@ const Friends = ({ friend }) => {
     'England',
     'France',
     'Netherlands',
+    'England (wildcard)',
   ];
 
   const totalBeersOwed = beersOwed.length;
 
   return (
     <div
-      className={`friend ${name === 'Reese' ? 'wildcard' : ''} ${
-        name === 'Ben' ? 'eliminated' : ''
+      className={`friend ${
+        name === 'Ben' || name === 'Reese' ? 'eliminated' : ''
       }`}>
-      <h2>{name === 'Reese' ? `${name} - wildcard 🃏` : name}</h2>
+      <h2>{name === 'Greeny' ? `${name} - Winner 🏆🎉` : name}</h2>
       <div>
         <p className='total-beers'>Total 🍺 Owed: {totalBeersOwed}</p>
         <p className='beers-owed'>🍺 Owed:</p>

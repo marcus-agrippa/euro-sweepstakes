@@ -44,7 +44,8 @@ const App = () => {
               friend.teams.includes(fixture.homeTeam) &&
               fixture.result === 'home' &&
               fixture.stage !== 'quarter' &&
-              fixture.stage !== 'semi'
+              fixture.stage !== 'semi' &&
+              fixture.stage !== 'final'
             ) {
               beersOwedInfo = {
                 from:
@@ -76,6 +77,18 @@ const App = () => {
                   friends.find(f => f.teams.includes(fixture.awayTeam))?.name ||
                   fixture.awayTeam,
                 description: `${loserFriend} owes a Espress Martini ☕🍸 to ${winnerFriend} because ${winnerTeam} beat ${loserTeam}`,
+              };
+              totalBeersOwed++;
+            } else if (
+              friend.teams.includes(fixture.homeTeam) &&
+              fixture.result === 'home' &&
+              fixture.stage === 'final'
+            ) {
+              beersOwedInfo = {
+                from:
+                  friends.find(f => f.teams.includes(fixture.awayTeam))?.name ||
+                  fixture.awayTeam,
+                description: `${loserFriend} owes a Long Island Iced Tea 🍹 to ${winnerFriend} because ${winnerTeam} beat ${loserTeam}`,
               };
               totalBeersOwed++;
             } else if (
@@ -130,11 +143,9 @@ const App = () => {
         <Friend key={index} friend={friend} />
       ))}
       <div className='friend fixtures'>
-        <h3 className='fixtures'>Final 🎉🎉🎉</h3>
-        <h6>Long Island Iced Tea Round 🍹</h6>
-        <p>🔥 (G) Spain 🇳🇱 v 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England 🃏 (R)</p>
-
-        <p className='fixtures-sup'>🔥 = H2H</p>
+        <h3 className='fixtures'>🏆🏆🏆 Winner 🎉🎉🎉</h3>
+        <h4>Greeny 🍺🟥🐂☕🍸🍹</h4>
+        <h5>Spain 🇳🇱</h5>
       </div>
       <div className='flex-row'>
         <button className='button' onClick={generateRandomNumber}>
@@ -150,7 +161,7 @@ const App = () => {
         </button>
         {randomName && <p className='random-number'>{randomName}</p>}
       </div>
-      <p className='last-updated'>Last Updated: 11/7/24</p>
+      <p className='last-updated'>Last Updated: 17/7/24</p>
     </div>
   );
 };
